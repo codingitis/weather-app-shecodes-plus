@@ -1,0 +1,41 @@
+.weather-app-wrapper {
+    max-width: 720px;
+  }
+  .weather-app {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+  }
+  .btn {
+    background-color: #bbdb97;
+    border-color: #bbdb97;
+    color: aliceblue;
+  }
+  .btn:hover {
+    background-color: #aee074;
+  }
+  .col-6 {
+    border-radius: 10px;
+  }
+  h4 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .col-sm-4 {
+    border: 3px solid rgba(232, 243, 220, 0.5);
+    background-color: #fafdf8;
+  }
+  .days {
+    border: 2px solid rgba(232, 243, 220, 0.5);
+    background-color: #fafdf8;
+  }
+  .col-2 {
+    width: 10%;
+  }
+  #description{
+     font-size: 22px;
+  }
+  h5{color: darkgreen;
+  font-style: oblique;}
+  
