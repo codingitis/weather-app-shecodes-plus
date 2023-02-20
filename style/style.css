@@ -19,9 +19,7 @@
   .col-6 {
     border-radius: 10px;
   }
-  h4 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
+  
   .col-sm-4 {
     border: 3px solid rgba(232, 243, 220, 0.5);
     background-color: #fafdf8;
@@ -37,5 +35,5 @@
      font-size: 22px;
   }
   h5{color: darkgreen;
-  font-style: oblique;}
+  }
   

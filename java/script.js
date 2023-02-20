@@ -18,7 +18,7 @@ p.innerHTML = day + "  " + hours + ":" + minutes;
 
 
   function searchCity(city)
-{let unit ="metric"
+{let units ="metric"
   let apiKey = 'd56d75447f3b48def76f4849f65957c0';
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
@@ -44,3 +44,19 @@ function search(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
+function showPosition(position) {
+  let lat= position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "d56d75447f3b48def76f4849f65957c0";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeather);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let positionButton = document.querySelector("#current-loc");
+positionButton.addEventListener("click", getCurrentLocation);
