@@ -31,9 +31,26 @@
   .col-2 {
     width: 10%;
   }
-  #description{
-     font-size: 22px;
-  }
+  
   h5{color: darkgreen;
   }
   #temperature {font-size: 35px;}
+
+  .weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+  }
+  
+  .weather-forecast-date {
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  
+  .weather-forecast-temperature-min {
+    opacity: 0.5;
+  }
+  
+  .weather-forecast-temperatures {
+    font-size: 13px;
+  }
